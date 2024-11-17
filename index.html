@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Website || Eric</title>
+  <link rel="icon" type="Image" href="logo - Copy.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/appwrite@10.0.1"></script>
+</head>
+<body>
+  <header class="animated-header">
+    <h1>Welcome to Our Services Website</h1>
+    <nav>
+      <input type="text" id="search-bar" placeholder="Search...">
+      <button class="btn animated-btn"><a href="">Sign In</a></button>
+      <button class="btn animated-btn"><a href="">Login</a></button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cards-container" class="animated-cards">
+      <div class="card">
+        <div class="card-image">
+          <img class="card-image" src="Services - Copy.jpg" alt="Service 1 Image">
+        </div>
+        <div class="card-text">
+          <h3>Service 1</h3>
+          <h2>Image To URL.</h2>
+          <button class="btn card-btn"><a href="https://ximagetourl.vercel.app/">Click Here</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img class="card-image" src="Services - Copy.jpg" alt="Service 1 Image">
+        </div>
+        <div class="card-text">
+          <h3>Service 2</h3>
+<h2>
+  Image Compressor
+</h2>        
+<a href="https://ximagecompressor.vercel.app/">    <button class="btn card-btn">Click Here</button></a>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img class="card-image" src="Services - Copy.jpg" alt="Service 1 Image">
+        </div>
+        <div class="card-text">
+          <h3>Service 3</h3>
+<h2>
+  PDF Compressor</h2>
+  <a href="https://shivamxpdf.vercel.app/"> <button class="btn card-btn">Click Here</button></a>
+
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img class="card-image" src="Services - Copy.jpg" alt="Service 1 Image">
+        </div>
+        <div class="card-text">
+          <h3>Service 4</h3>
+          
+            <h2>
+Currency Convertor
+</h2>
+<a href="https://xcurrencyconvertor.vercel.app/"><button class="btn card-btn">Click Here</button>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="animated-footer">
+    <p>© 2024 Shivam Jha. All Rights Reserved.</p>
+  </footer>
+</body> 
+</html>
+
+<style>
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #2c3e50, #3498db);
+      color: #fff;
+    }
+
+/* Header Styles */
+header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  animation: rotateIn 2s;
+
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#search-bar {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  flex: 1;
+  min-width: 150px;
+}
+
+#search-bar:focus {
+  border: 2px solid lightseagreen;
+  transform: scale(1.05);
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #16a085;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Cards Section */
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 35px
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  animation: flipInY 2s;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+  transform: translateY(-15px);
+  opacity: 1s;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+.card-image {
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-text {
+  padding: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0;
+  color: #ffff;
+  font-size: 1.2rem;
+}
+.btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #16a085;
+      color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card-btn {
+      margin-top: 10px;
+      background: #e74c3c;
+      font-family: monospace;
+      font-weight: 900;
+      font-size:large;width: 100%;
+      
+    }
+    
+
+.card-btn:hover{
+  border: 3px solid gray;
+}
+/* Footer Styles */
+footer {
+
+  padding: 20px;
+  text-align: center;
+  background: #212121;
+  animation: fadeInDown 1.5s ease-in-out;
+  
+
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+header{
+  width: 100%;
+}
+.card{
+ margin-left: 30px;
+}
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+  footer{
+    position: relative;;
+  }
+}
+ /* Animations */
+ @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes rotateIn {
+      from {
+        opacity: 0;
+        transform: rotateX(-90deg);
+      }
+      to {
+        opacity: 1;
+        transform: rotateX(0);
+      }
+    }
+    
+    @keyframes flipInY {
+      from {
+        opacity: 0;
+        transform: rotateY(90deg);
+      }
+      to {
+        opacity: 1;
+        transform: rotateY(0);
+      }
+    }
+</style>
